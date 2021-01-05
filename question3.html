@@ -18,11 +18,29 @@
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
+     let myAnime = ["Demon slayer","Attack on Titan","Fire force","Tokyo ghoul"];
+     let myFriendAnime = ["A silent voice", "Tokyo ghoul","My hero academia","Fire force"];
+     console.log(myAnime);
+     console.log(myFriendAnime);
 
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
+      let mutualAnime = [];
 
       // mutualAnimeقارن المصفوفتين وضيف المسلسلات المشتركة ل
+      for (let index = 0; index < myAnime.length; index++) {
+        const element = myAnime[index];
+        console.log(element)
+        for (let index = 0; index < myFriendAnime.length; index++) {
+          const element2 = myFriendAnime[index];
+          console.log(element2)
+          if (element == element2){
+            mutualAnime.push(element)
+
+          }
+          
+        }
+      }
 
       // consoleفي ال mutualAnime اطبع
 
